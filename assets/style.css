@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Explora&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* Testing */
+div{
+    border: 1px solid red;
+}
+section{
+    border: 1px solid blue;
+    padding: 5px;
+}
+img{
+    border: 1px solid white;
+}
+
+/* estilos principales */
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    max-width: 1920px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* estilos nav */
+nav{
+    width: 100%;
+    max-width: 1920px;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 85px;
+    height: 85px;
+    margin-left: 10px;
+    margin: 5px;
+}
+nav ul{
+    width: 70%;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+nav ul a{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* estilos section principal */
+
+.section-principal{
+    width: 100%;
+    max-width: 1920px;
+    height: 80vh;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-principal-img{
+    width: 45%;
+    height: 75%;
+}
+.section-principal-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-principal-cont{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-principal-title{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: red;
+}
+h3{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+}
+.section-principal-description{
+    width: 100%;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Explora', cursive;
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.section-principal-description p span{
+    color: red;
+    font-family: 'Explora', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+.section-principal-description a{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* estilos section productos */
+
+.section-pruductos{
+    width: 100%;
+    max-width: 1920px;
+    height: 80vh;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.section-pruductos-botones{
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-pruductos-botones a{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    letter-spacing: 1px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.section-pruductos-cont-cards{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    gap: 20px;
+}
