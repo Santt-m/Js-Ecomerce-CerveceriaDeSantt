@@ -17,14 +17,16 @@ descripcion base de datos:
 
 */
 
+// []
+
 const productList = [
     {
         id: 0,
-        tipo:"",
-        marca:"",
-        embase:"",
-        color: "",
-        capacidad: 00,
+        tipo:"artesanal",
+        marca:"Santt",
+        embase:"lata",
+        color: "red",
+        capacidad: 472,
         retornable: false,
         precio: 1,
         
@@ -731,3 +733,30 @@ const productList = [
     },
     
 ];
+
+
+/* Renderizado de productos */
+
+/* Esta funcion "splitProducts" toma un argumento "size". 
+La función utiliza un ciclo "for" para recorrer una lista de productos llamada "productList" y,
+mediante el uso del método "slice", divide la lista en segmentos del tamaño especificado por el argumento "size" 
+y los agrega a una nueva lista llamada "dividedProducts". 
+Finalmente, la función devuelve la lista dividida. */
+
+const splitProducts = (size) => {
+    let dividedProducts = [];
+
+    for (let i = 0; i < productList.length; i += size){
+        dividedProducts.push(productList.slice(i, i +size))
+    }
+    return dividedProducts;
+};
+
+/* Con esta funcion marco un limite a la cantidad de productos a renderizar */
+
+const productsController ={
+    dividedProducts: splitProducts(6), /* esta propiedad almacena el resultado de llamar a la función "splitProducts" con un argumento de 6. */
+    nextProductsIndex: 1, /* esta propiedad almacena un numero que inicia en 1 y se utilizara para mantener un registro del indice de los productos que se van a mostrar en la pagina */
+    productsLimit: splitProducts(6).length, /* Esta propiedad almacena el resultado de llamar a la funcion "splitProducts" con un argumento de 6 y luego obtener el tamaño de la lista dividida. Esta propiedad se utilizara para establecer un limite a la cantidad de productos a mostrar en la pagina que sale de la cantidad de elementos en el array de productos "productList" */
+};
+

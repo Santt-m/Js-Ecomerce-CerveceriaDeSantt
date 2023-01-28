@@ -187,10 +187,119 @@ h3{
 .section-pruductos-cont-cards{
     width: 100%;
 
+    padding: 10px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 
     gap: 20px;
+}
+
+/* Estilos card */
+
+.productos-card{
+    background-color: rgb(97, 97, 97);
+    width: 290px;
+    height: 590px;
+
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    width: 50%;
+    height: 30%;
+}
+
+.productos-card-txt-body{
+    width: 95%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productos-card-txt-body h4{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.productos-card-txt-info{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.card-marca{
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: red;
+}
+.card-precio{
+    color: white;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.productos-card-txt-data{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-embase{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.card-capacidad{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.card-descripcion{
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.card-cont-ibu{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-ABV{
+    color: white;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.card-IBU{
+    color: white;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.card-btn-add{
+    padding: 5px;
+    
+    border: 1px solid white;
+    border-radius: 10px;
+
+    color: white;
 }
